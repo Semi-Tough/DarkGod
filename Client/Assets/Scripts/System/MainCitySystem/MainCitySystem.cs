@@ -262,9 +262,9 @@ public class MainCitySystem : SystemRoot
 
     public void ResponseStrengthen(GameMessage message)
     {
-        int oldFighting = PeCommon.GetFightByProperty(gameRoot.PlayerData);
+        int oldFighting = PeCommon.GetFightByProperty(gameRoot.playerData);
         gameRoot.SetPlayerDataByStrengthen(message.ResponseStrengthen);
-        int newFighting = PeCommon.GetFightByProperty(gameRoot.PlayerData);
+        int newFighting = PeCommon.GetFightByProperty(gameRoot.playerData);
         GameRoot.AddTips(Constants.Color("战力提升 + " + (newFighting - oldFighting), TextColor.Red));
 
         if (message.PushTask != null)
@@ -323,7 +323,7 @@ public class MainCitySystem : SystemRoot
 
     public void ResponsePower(GameMessage message)
     {
-        GameRoot.AddTips("体力恢复: " + (message.PushPower.Power - gameRoot.PlayerData.Power));
+        GameRoot.AddTips("体力恢复: " + (message.PushPower.Power - gameRoot.playerData.Power));
         gameRoot.SetPlayerDataByTimePush(message.PushPower);
         if (mainCityWindow.GetWindowState())
         {

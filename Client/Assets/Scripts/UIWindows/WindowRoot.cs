@@ -43,7 +43,7 @@ public class WindowRoot : MonoBehaviour
         netService = NetService.instance;
         timerService = TimerService.instance;
 
-        playerData = GameRoot.instance.PlayerData;
+        playerData = GameRoot.instance.playerData;
     }
 
     private void ClearWindow()

@@ -15,7 +15,7 @@ public class GameRoot : MonoBehaviour
     public LoadingWindow loadingWindow;
     public TipsWindow tipsWindow;
 
-    public PlayerData PlayerData { get; private set; }
+    public PlayerData playerData { get; private set; }
 
     private void Start()
     {
@@ -69,62 +69,62 @@ public class GameRoot : MonoBehaviour
 
     public void SetPlayerDataByLogin(ResponseLogin date)
     {
-        PlayerData = date.PlayerData;
+        playerData = date.PlayerData;
     }
 
     public void SetPlayerDataByName(string playerName)
     {
-        PlayerData.Name = playerName;
+        playerData.Name = playerName;
     }
 
     public void SetPlayerDataByGuide(ResponseGuide responseGuide)
     {
-        PlayerData.Coin = responseGuide.Coin;
-        PlayerData.Level = responseGuide.Level;
-        PlayerData.Exp = responseGuide.Exp;
-        PlayerData.GuideId = responseGuide.GuideId;
+        playerData.Coin = responseGuide.Coin;
+        playerData.Level = responseGuide.Level;
+        playerData.Exp = responseGuide.Exp;
+        playerData.GuideId = responseGuide.GuideId;
     }
 
     public void SetPlayerDataByStrengthen(ResponseStrengthen responseStrengthen)
     {
-        PlayerData.Coin = responseStrengthen.Coin;
-        PlayerData.Crystal = responseStrengthen.Crystal;
-        PlayerData.Hp = responseStrengthen.Hp;
-        PlayerData.Ad = responseStrengthen.Ad;
-        PlayerData.Ap = responseStrengthen.Ap;
-        PlayerData.AdDef = responseStrengthen.AdDef;
-        PlayerData.ApDef = responseStrengthen.ApDef;
-        PlayerData.StrengthenArr = responseStrengthen.StrengthenArr;
+        playerData.Coin = responseStrengthen.Coin;
+        playerData.Crystal = responseStrengthen.Crystal;
+        playerData.Hp = responseStrengthen.Hp;
+        playerData.Ad = responseStrengthen.Ad;
+        playerData.Ap = responseStrengthen.Ap;
+        playerData.AdDef = responseStrengthen.AdDef;
+        playerData.ApDef = responseStrengthen.ApDef;
+        playerData.StrengthenArr = responseStrengthen.StrengthenArr;
     }
 
     public void SetPlayerDataByTimePush(PushPower pushPower)
     {
-        PlayerData.Power = pushPower.Power;
+        playerData.Power = pushPower.Power;
     }
 
     public void SetPlayerDataByBuy(ResponseBuy responseBuy)
     {
-        PlayerData.Coin = responseBuy.Coin;
-        PlayerData.Diamond = responseBuy.Diamond;
-        PlayerData.Power = responseBuy.Power;
+        playerData.Coin = responseBuy.Coin;
+        playerData.Diamond = responseBuy.Diamond;
+        playerData.Power = responseBuy.Power;
     }
 
     public void SetPlayerDataByTask(ResponseTask responseTask)
     {
-        PlayerData.Coin = responseTask.Coin;
-        PlayerData.Exp = responseTask.Exp;
-        PlayerData.Level = responseTask.Level;
-        PlayerData.TaskArr = responseTask.TaskArr;
+        playerData.Coin = responseTask.Coin;
+        playerData.Exp = responseTask.Exp;
+        playerData.Level = responseTask.Level;
+        playerData.TaskArr = responseTask.TaskArr;
     }
 
     public void SetPlayerDataByTaskPush(PushTask pushTask)
     {
-        PlayerData.TaskArr = pushTask.TaskArr;
+        playerData.TaskArr = pushTask.TaskArr;
     }
 
     public void SetPlayerDataByDungeonPush(ResponseDungeon responseDungeon)
     {
-        PlayerData.Power = responseDungeon.Power;
+        playerData.Power = responseDungeon.Power;
     }
 
     #endregion

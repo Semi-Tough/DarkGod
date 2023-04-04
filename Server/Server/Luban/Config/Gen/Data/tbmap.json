@@ -1,0 +1,938 @@
+[
+  {
+    "id": 10000,
+    "mapName": "圣光主城",
+    "sceneName": "SceneMainCity",
+    "power": 0,
+    "mainCamPos": {
+      "x": 17.4,
+      "y": 7,
+      "z": 50
+    },
+    "mainCamRote": {
+      "x": 45,
+      "y": 135,
+      "z": 0
+    },
+    "playerBornPos": {
+      "x": 22,
+      "y": -1.1,
+      "z": 45
+    },
+    "playerBornRote": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "exp": 0,
+    "coin": 0,
+    "crystal": 0,
+    "monsterList": []
+  },
+  {
+    "id": 10001,
+    "mapName": "荒野遗迹",
+    "sceneName": "SceneOrge",
+    "power": 5,
+    "mainCamPos": {
+      "x": -13.19,
+      "y": 18.87,
+      "z": 14.69
+    },
+    "mainCamRote": {
+      "x": 45,
+      "y": 135,
+      "z": 0
+    },
+    "playerBornPos": {
+      "x": -10,
+      "y": 13.2,
+      "z": 11.5
+    },
+    "playerBornRote": {
+      "x": 0,
+      "y": 145,
+      "z": 0
+    },
+    "exp": 1500,
+    "coin": 980,
+    "crystal": 48,
+    "monsterList": [
+      {
+        "id": 1,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -4.39,
+          "y": 13.3,
+          "z": 3.79
+        },
+        "bornRotY": -50,
+        "level": 1
+      },
+      {
+        "id": 2,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -7.55,
+          "y": 13.3,
+          "z": 3
+        },
+        "bornRotY": 0,
+        "level": 1
+      },
+      {
+        "id": 3,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.86,
+          "y": 13.6,
+          "z": 3.7
+        },
+        "bornRotY": -107.3,
+        "level": 2
+      },
+      {
+        "id": 4,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 14.35,
+          "y": 13.35,
+          "z": 5.95
+        },
+        "bornRotY": -117.4,
+        "level": 2
+      },
+      {
+        "id": 5,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.11,
+          "y": 13.35,
+          "z": 1.63
+        },
+        "bornRotY": -66.1,
+        "level": 2
+      },
+      {
+        "id": 6,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.16,
+          "y": 8.8,
+          "z": 32
+        },
+        "bornRotY": 188,
+        "level": 3
+      },
+      {
+        "id": 7,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 11.8,
+          "y": 8.8,
+          "z": 30.8
+        },
+        "bornRotY": 145.5,
+        "level": 3
+      },
+      {
+        "id": 8,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.38,
+          "y": 8.8,
+          "z": 40.7
+        },
+        "bornRotY": 173.3,
+        "level": 3
+      },
+      {
+        "id": 9,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 9,
+          "y": 8.9,
+          "z": 38.6
+        },
+        "bornRotY": 145,
+        "level": 3
+      },
+      {
+        "id": 10,
+        "wave": 3,
+        "monsterId": 2001,
+        "bornPos": {
+          "x": 11.4,
+          "y": 8.85,
+          "z": 41
+        },
+        "bornRotY": 142,
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 10002,
+    "mapName": "荒野遗迹",
+    "sceneName": "SceneOrge",
+    "power": 5,
+    "mainCamPos": {
+      "x": -13.19,
+      "y": 18.87,
+      "z": 14.69
+    },
+    "mainCamRote": {
+      "x": 45,
+      "y": 135,
+      "z": 0
+    },
+    "playerBornPos": {
+      "x": -10,
+      "y": 13.2,
+      "z": 11.5
+    },
+    "playerBornRote": {
+      "x": 0,
+      "y": 145,
+      "z": 0
+    },
+    "exp": 3000,
+    "coin": 1080,
+    "crystal": 58,
+    "monsterList": [
+      {
+        "id": 1,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -4.39,
+          "y": 13.3,
+          "z": 3.79
+        },
+        "bornRotY": -50,
+        "level": 2
+      },
+      {
+        "id": 2,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -7.55,
+          "y": 13.3,
+          "z": 3
+        },
+        "bornRotY": 0,
+        "level": 2
+      },
+      {
+        "id": 3,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.86,
+          "y": 13.6,
+          "z": 3.7
+        },
+        "bornRotY": -107.3,
+        "level": 3
+      },
+      {
+        "id": 4,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 14.35,
+          "y": 13.35,
+          "z": 5.95
+        },
+        "bornRotY": -117.4,
+        "level": 3
+      },
+      {
+        "id": 5,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.11,
+          "y": 13.35,
+          "z": 1.63
+        },
+        "bornRotY": -66.1,
+        "level": 3
+      },
+      {
+        "id": 6,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.16,
+          "y": 8.8,
+          "z": 32
+        },
+        "bornRotY": 188,
+        "level": 4
+      },
+      {
+        "id": 7,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 11.8,
+          "y": 8.8,
+          "z": 30.8
+        },
+        "bornRotY": 145.5,
+        "level": 4
+      },
+      {
+        "id": 8,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.38,
+          "y": 8.8,
+          "z": 40.7
+        },
+        "bornRotY": 173.3,
+        "level": 4
+      },
+      {
+        "id": 9,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 9,
+          "y": 8.9,
+          "z": 38.6
+        },
+        "bornRotY": 145,
+        "level": 4
+      },
+      {
+        "id": 10,
+        "wave": 3,
+        "monsterId": 2001,
+        "bornPos": {
+          "x": 11.4,
+          "y": 8.85,
+          "z": 41
+        },
+        "bornRotY": 142,
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 10003,
+    "mapName": "荒野遗迹",
+    "sceneName": "SceneOrge",
+    "power": 5,
+    "mainCamPos": {
+      "x": -13.19,
+      "y": 18.87,
+      "z": 14.69
+    },
+    "mainCamRote": {
+      "x": 45,
+      "y": 135,
+      "z": 0
+    },
+    "playerBornPos": {
+      "x": -10,
+      "y": 13.2,
+      "z": 11.5
+    },
+    "playerBornRote": {
+      "x": 0,
+      "y": 145,
+      "z": 0
+    },
+    "exp": 6000,
+    "coin": 1180,
+    "crystal": 68,
+    "monsterList": [
+      {
+        "id": 1,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -4.39,
+          "y": 13.3,
+          "z": 3.79
+        },
+        "bornRotY": -50,
+        "level": 2
+      },
+      {
+        "id": 2,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -7.55,
+          "y": 13.3,
+          "z": 3
+        },
+        "bornRotY": 0,
+        "level": 2
+      },
+      {
+        "id": 3,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.86,
+          "y": 13.6,
+          "z": 3.7
+        },
+        "bornRotY": -107.3,
+        "level": 3
+      },
+      {
+        "id": 4,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 14.35,
+          "y": 13.35,
+          "z": 5.95
+        },
+        "bornRotY": -117.4,
+        "level": 3
+      },
+      {
+        "id": 5,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.11,
+          "y": 13.35,
+          "z": 1.63
+        },
+        "bornRotY": -66.1,
+        "level": 3
+      },
+      {
+        "id": 6,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.16,
+          "y": 8.8,
+          "z": 32
+        },
+        "bornRotY": 188,
+        "level": 4
+      },
+      {
+        "id": 7,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 11.8,
+          "y": 8.8,
+          "z": 30.8
+        },
+        "bornRotY": 145.5,
+        "level": 4
+      },
+      {
+        "id": 8,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.38,
+          "y": 8.8,
+          "z": 40.7
+        },
+        "bornRotY": 173.3,
+        "level": 4
+      },
+      {
+        "id": 9,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 9,
+          "y": 8.9,
+          "z": 38.6
+        },
+        "bornRotY": 145,
+        "level": 4
+      },
+      {
+        "id": 10,
+        "wave": 3,
+        "monsterId": 2001,
+        "bornPos": {
+          "x": 11.4,
+          "y": 8.85,
+          "z": 41
+        },
+        "bornRotY": 142,
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 10004,
+    "mapName": "荒野遗迹",
+    "sceneName": "SceneOrge",
+    "power": 5,
+    "mainCamPos": {
+      "x": -13.19,
+      "y": 18.87,
+      "z": 14.69
+    },
+    "mainCamRote": {
+      "x": 45,
+      "y": 135,
+      "z": 0
+    },
+    "playerBornPos": {
+      "x": -10,
+      "y": 13.2,
+      "z": 11.5
+    },
+    "playerBornRote": {
+      "x": 0,
+      "y": 145,
+      "z": 0
+    },
+    "exp": 12000,
+    "coin": 1280,
+    "crystal": 78,
+    "monsterList": [
+      {
+        "id": 1,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -4.39,
+          "y": 13.3,
+          "z": 3.79
+        },
+        "bornRotY": -50,
+        "level": 3
+      },
+      {
+        "id": 2,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -7.55,
+          "y": 13.3,
+          "z": 3
+        },
+        "bornRotY": 0,
+        "level": 3
+      },
+      {
+        "id": 3,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.86,
+          "y": 13.6,
+          "z": 3.7
+        },
+        "bornRotY": -107.3,
+        "level": 4
+      },
+      {
+        "id": 4,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 14.35,
+          "y": 13.35,
+          "z": 5.95
+        },
+        "bornRotY": -117.4,
+        "level": 4
+      },
+      {
+        "id": 5,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.11,
+          "y": 13.35,
+          "z": 1.63
+        },
+        "bornRotY": -66.1,
+        "level": 4
+      },
+      {
+        "id": 6,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.16,
+          "y": 8.8,
+          "z": 32
+        },
+        "bornRotY": 188,
+        "level": 4
+      },
+      {
+        "id": 7,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 11.8,
+          "y": 8.8,
+          "z": 30.8
+        },
+        "bornRotY": 145.5,
+        "level": 5
+      },
+      {
+        "id": 8,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.38,
+          "y": 8.8,
+          "z": 40.7
+        },
+        "bornRotY": 173.3,
+        "level": 5
+      },
+      {
+        "id": 9,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 9,
+          "y": 8.9,
+          "z": 38.6
+        },
+        "bornRotY": 145,
+        "level": 5
+      },
+      {
+        "id": 10,
+        "wave": 3,
+        "monsterId": 2001,
+        "bornPos": {
+          "x": 11.4,
+          "y": 8.85,
+          "z": 41
+        },
+        "bornRotY": 142,
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 10005,
+    "mapName": "荒野遗迹",
+    "sceneName": "SceneOrge",
+    "power": 5,
+    "mainCamPos": {
+      "x": -13.19,
+      "y": 18.87,
+      "z": 14.69
+    },
+    "mainCamRote": {
+      "x": 45,
+      "y": 135,
+      "z": 0
+    },
+    "playerBornPos": {
+      "x": -10,
+      "y": 13.2,
+      "z": 11.5
+    },
+    "playerBornRote": {
+      "x": 0,
+      "y": 145,
+      "z": 0
+    },
+    "exp": 24000,
+    "coin": 1380,
+    "crystal": 88,
+    "monsterList": [
+      {
+        "id": 1,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -4.39,
+          "y": 13.3,
+          "z": 3.79
+        },
+        "bornRotY": -50,
+        "level": 3
+      },
+      {
+        "id": 2,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -7.55,
+          "y": 13.3,
+          "z": 3
+        },
+        "bornRotY": 0,
+        "level": 3
+      },
+      {
+        "id": 3,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.86,
+          "y": 13.6,
+          "z": 3.7
+        },
+        "bornRotY": -107.3,
+        "level": 4
+      },
+      {
+        "id": 4,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 14.35,
+          "y": 13.35,
+          "z": 5.95
+        },
+        "bornRotY": -117.4,
+        "level": 4
+      },
+      {
+        "id": 5,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.11,
+          "y": 13.35,
+          "z": 1.63
+        },
+        "bornRotY": -66.1,
+        "level": 4
+      },
+      {
+        "id": 6,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.16,
+          "y": 8.8,
+          "z": 32
+        },
+        "bornRotY": 188,
+        "level": 4
+      },
+      {
+        "id": 7,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 11.8,
+          "y": 8.8,
+          "z": 30.8
+        },
+        "bornRotY": 145.5,
+        "level": 5
+      },
+      {
+        "id": 8,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.38,
+          "y": 8.8,
+          "z": 40.7
+        },
+        "bornRotY": 173.3,
+        "level": 5
+      },
+      {
+        "id": 9,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 9,
+          "y": 8.9,
+          "z": 38.6
+        },
+        "bornRotY": 145,
+        "level": 5
+      },
+      {
+        "id": 10,
+        "wave": 3,
+        "monsterId": 2001,
+        "bornPos": {
+          "x": 11.4,
+          "y": 8.85,
+          "z": 41
+        },
+        "bornRotY": 142,
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 10006,
+    "mapName": "荒野遗迹",
+    "sceneName": "SceneOrge",
+    "power": 5,
+    "mainCamPos": {
+      "x": -13.19,
+      "y": 18.87,
+      "z": 14.69
+    },
+    "mainCamRote": {
+      "x": 45,
+      "y": 135,
+      "z": 0
+    },
+    "playerBornPos": {
+      "x": -10,
+      "y": 13.2,
+      "z": 11.5
+    },
+    "playerBornRote": {
+      "x": 0,
+      "y": 145,
+      "z": 0
+    },
+    "exp": 48000,
+    "coin": 1480,
+    "crystal": 98,
+    "monsterList": [
+      {
+        "id": 1,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -4.39,
+          "y": 13.3,
+          "z": 3.79
+        },
+        "bornRotY": -50,
+        "level": 3
+      },
+      {
+        "id": 2,
+        "wave": 1,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": -7.55,
+          "y": 13.3,
+          "z": 3
+        },
+        "bornRotY": 0,
+        "level": 3
+      },
+      {
+        "id": 3,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.86,
+          "y": 13.6,
+          "z": 3.7
+        },
+        "bornRotY": -107.3,
+        "level": 4
+      },
+      {
+        "id": 4,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 14.35,
+          "y": 13.35,
+          "z": 5.95
+        },
+        "bornRotY": -117.4,
+        "level": 4
+      },
+      {
+        "id": 5,
+        "wave": 2,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.11,
+          "y": 13.35,
+          "z": 1.63
+        },
+        "bornRotY": -66.1,
+        "level": 4
+      },
+      {
+        "id": 6,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 18.16,
+          "y": 8.8,
+          "z": 32
+        },
+        "bornRotY": 188,
+        "level": 4
+      },
+      {
+        "id": 7,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 11.8,
+          "y": 8.8,
+          "z": 30.8
+        },
+        "bornRotY": 145.5,
+        "level": 5
+      },
+      {
+        "id": 8,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 15.38,
+          "y": 8.8,
+          "z": 40.7
+        },
+        "bornRotY": 173.3,
+        "level": 5
+      },
+      {
+        "id": 9,
+        "wave": 3,
+        "monsterId": 1001,
+        "bornPos": {
+          "x": 9,
+          "y": 8.9,
+          "z": 38.6
+        },
+        "bornRotY": 145,
+        "level": 5
+      },
+      {
+        "id": 10,
+        "wave": 3,
+        "monsterId": 2001,
+        "bornPos": {
+          "x": 11.4,
+          "y": 8.85,
+          "z": 41
+        },
+        "bornRotY": 142,
+        "level": 3
+      }
+    ]
+  }
+]

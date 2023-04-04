@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1001,
+    "name": "铁甲战士",
+    "type": 1,
+    "isStop": true,
+    "resPath": "ResPrefabs/NPC/MonsterSoldier_1",
+    "skillID": 201,
+    "atkDis": 2,
+    "props": {
+      "hp": 2000,
+      "ad": 100,
+      "ap": 80,
+      "addef": 5,
+      "apdef": 10,
+      "dodge": 0,
+      "pierce": 5,
+      "critical": 35
+    }
+  },
+  {
+    "id": 2001,
+    "name": "地狱魔卫",
+    "type": 2,
+    "isStop": false,
+    "resPath": "ResPrefabs/NPC/MonsterBoss_1",
+    "skillID": 301,
+    "atkDis": 4.5,
+    "props": {
+      "hp": 10000,
+      "ad": 250,
+      "ap": 180,
+      "addef": 55,
+      "apdef": 60,
+      "dodge": 20,
+      "pierce": 10,
+      "critical": 20
+    }
+  }
+]

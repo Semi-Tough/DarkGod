@@ -1,0 +1,15 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CDarkGod_005CProtocol_005CEnv_005CProtoNet_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CDarkGod_005CServer_005CEnv_005CPELogger_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CDarkGod_005CServer_005CEnv_005CPEProtocol_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CDarkGod_005CServer_005CEnv_005CPESocket_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CGodDark_005CServer_005CEnv_005CProtocol_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CServer_005CEnv_005CIOCPNet_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CServer_005CEnv_005CMySql_002EData_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CServer_005CEnv_005CPEProtocol_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005C16934_005CDesktop_005CServer_005CEnv_005CPETimer_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\16934\Desktop\GodDark\Server\Env\PETimer.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\16934\Desktop\GodDark\Server\Env\Protocol.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\16934\Desktop\DarkGod\Server\Env\PEProtocol.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

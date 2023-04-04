@@ -1,0 +1,285 @@
+syntax = "proto3";
+
+package PEProtocol;
+
+message NetMsg {
+
+    Head head = 1;
+    Body body = 2;
+}
+message Head {
+    CMD cmd = 1;
+    ErrorCode error_code = 2;
+}
+message Body {
+    PlayerData player_data = 1;
+
+    RequestLogin request_login = 2;
+    ResponseLogin response_login = 3;
+
+    RequestRename request_rename = 4;
+    ResponseRename response_rename = 5;
+
+    RequestGuide request_guide = 6;
+    ResponseGuide response_guide = 7;
+
+    RequestStrengthen request_strengthen = 8;
+    ResponseStrengthen response_strengthen = 9;
+
+    SendChat send_chat = 10;
+    PushChat push_chat = 11;
+
+    RequestBuy request_buy = 12;
+    ResponseBuy response_buy = 13;
+
+    PushPower push_power = 14;
+
+    RequestTask request_task = 15;
+    ResponseTask response_task = 16;
+    PushTask push_task = 17;
+
+    RequestDungeon request_dungeon = 18;
+    ResponseDungeon response_dungeon = 19;
+
+    RequestEndDungeon request_end_dungeon = 20;
+    ResponseEndDungeon response_end_dungeon = 21;
+}
+
+enum CMD {
+    //登陆相关
+    CMD_NONE = 0;
+
+    CMD_REQUEST_LOGIN = 1;
+    CMD_RESPONSE_LOGIN = 2;
+
+    CMD_REQUEST_RENAME = 3;
+    CMD_RESPONSE_RENAME = 4;
+
+    //主城相关
+    CMD_REQUEST_GUIDE = 5;
+    CMD_RESPONSE_GUIDE = 6;
+
+    CMD_REQUEST_STRENGTHEN = 7;
+    CMD_RESPONSE_STRENGTHEN = 8;
+
+    CMD_SEND_CHAT = 9;
+    CMD_PUSH_CHAT = 10;
+
+    CMD_REQUEST_BUY = 11;
+    CMD_RESPONSE_BUY = 12;
+
+    CMD_PUSH_POWER = 13;
+
+    CMD_REQUEST_TASK = 14;
+    CMD_RESPONSE_TASK = 15;
+    CMD_PUSH_TASK = 16;
+
+    //副本相关
+    CMD_REQUEST_DUNGEON = 17;
+    CMD_RESPONSE_DUNGEON = 18;
+    CMD_REQUEST_END_DUNGEON = 19;
+    CMD_RESPONSE_END_DUNGEON = 20;
+}
+enum ErrorCode {
+    //账户未上线
+    ERROR_CODE_NONE = 0;
+
+    //账户已上线
+    ERROR_CODE_ACCOUNT_IS_ONLINE = 1;
+
+    //密码错误
+    ERROR_CODE_WRONG_PASSWORD = 2;
+
+    //名字已经存在
+    ERROR_CODE_NAME_EXIST = 3;
+
+    //数据库更新出错
+    ERROR_CODE_UPDATA_DATABASE_ERROR = 4;
+
+    //服务器数据异常
+    ERROR_CODE_SERVER_DATA_ERROR = 5;
+
+    //客户端数据异常
+    ERROR_CODE_CLIENT_DATA_ERROR = 6;
+
+    //数据异常
+    ERROR_CODE_LACK_LEVEL = 7;
+    ERROR_CODE_LACK_COIN = 8;
+    ERROR_CODE_LACK_CRYSTAL = 9;
+    ERROR_CODE_LACK_DIAMOND = 10;
+    ERROR_CODE_LACK_POWER = 11;
+}
+
+//玩家相关
+message PlayerData
+{
+    sint32 id = 1;
+    string name = 2;
+    string account = 3;
+    string password = 4;
+
+    sint32 exp = 5;
+    sint32 level = 6;
+
+    sint32 coin = 7;
+    sint32 diamond = 8;
+    sint32 crystal = 9;
+
+    sint32 hp = 10;
+    sint32 ad = 11;
+    sint32 ad_def = 12;
+    sint32 ap = 13;
+    sint32 ap_def = 14;
+    sint32 critical = 15;
+    sint32 pierce = 16;
+    sint32 dodge = 17;
+
+    sint32 guide_id = 18;
+    sint32 dungeon_id = 19;
+
+    repeated TaskData task_data = 20;
+    repeated StrengthenData strengthen_data = 21;
+
+    sint32 power = 22;
+    double leave_time = 23;
+}
+message TaskData {
+    sint32 id = 1;
+    sint32 task_id=2;
+    sint32 progress = 3;
+    sint32 max_count = 4;
+    bool finished = 5;
+}
+enum StrengthenType {
+    STRENGTHEN_TYPE_HEAD = 0;
+    STRENGTHEN_TYPE_BODY = 1;
+    STRENGTHEN_TYPE_WAIST = 2;
+    STRENGTHEN_TYPE_HAND = 3;
+    STRENGTHEN_TYPE_LEG = 4;
+    STRENGTHEN_TYPE_FEET = 5;
+}
+message StrengthenData {
+    sint32 id = 1;
+    StrengthenType strengthen_type = 2;
+    sint32 level = 3;
+}
+//登陆相关
+message RequestLogin
+{
+    string account = 1;
+    string password = 2;
+}
+message ResponseLogin
+{
+    PlayerData player_data = 1;
+}
+message RequestRename
+{
+    string name = 1;
+}
+message ResponseRename
+{
+    string name = 1;
+}
+//引导相关
+message RequestGuide
+{
+    sint32 guide_id = 1;
+}
+message ResponseGuide
+{
+    sint32 coin = 1;
+    sint32 exp = 2;
+    sint32 guide_id = 3;
+    sint32 level = 4;
+}
+//强化相关
+message RequestStrengthen
+{
+    StrengthenType strengthen_type = 1;
+}
+message ResponseStrengthen
+{
+    sint32 ad = 1;
+    sint32 ad_def = 2;
+    sint32 ap = 3;
+    sint32 ap_def = 4;
+    sint32 coin = 5;
+    sint32 crystal = 6;
+    sint32 hp = 7;
+    repeated StrengthenData strengthen_arr = 8;
+}
+// 聊天相关
+message SendChat
+{
+    string chat = 1;
+}
+message PushChat
+{
+    string chat = 1;
+    string name = 2;
+}
+//交易相关
+message RequestBuy
+{
+    sint32 cost = 1;
+    sint32 type = 2;
+}
+message ResponseBuy
+{
+    sint32 coin = 1;
+    sint32 cost = 2;
+    sint32 diamond = 3;
+    sint32 power = 4;
+    sint32 type = 5;
+}
+// 体力相关
+message PushPower
+{
+    sint32 power = 1;
+}
+//任务相关
+message RequestTask
+{
+    sint32 id = 1;
+}
+message ResponseTask
+{
+    sint32 coin = 1;
+    sint32 exp = 2;
+    sint32 level = 3;
+    repeated TaskData task_list = 4;
+}
+message PushTask
+{
+    repeated TaskData task_list = 1;
+}
+// 副本相关
+message RequestDungeon
+{
+    sint32 dungeon_id = 1;
+}
+message ResponseDungeon
+{
+    sint32 dungeon_id = 1;
+    sint32 power = 2;
+}
+message RequestEndDungeon
+{
+    bool win = 1;
+    sint32 dungeon_id = 2;
+    sint32 rest_hp = 3;
+    sint32 cost_time = 4;
+}
+message ResponseEndDungeon
+{
+    bool win = 1;
+    sint32 dungeon_id = 2;
+    sint32 rest_hp = 3;
+    sint32 cost_time = 4;
+    sint32 coin = 5;
+    sint32 level = 6;
+    sint32 exp = 7;
+    sint32 crystal = 8;
+    sint32 dungeon = 9;
+}
